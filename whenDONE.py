@@ -9,4 +9,3 @@
 # git commit -m "Done editing"
 #
 # git status
-#token: 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
