@@ -33,11 +33,11 @@
 
 
 x= int(input("X= "))
-while x<10                                          #use while when vague number of iterations
+while x<10:                                          #use while when vague number of iterations
     print(x)
     x+=1
-for i in range(10)                                      #use for when more structured
-for i in "cake"
+# for i in range(10):                                      #use for when more structured
+for i in "cake":
     print(i)                                    #iterates each letter of cake
 
 
