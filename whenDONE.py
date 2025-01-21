@@ -5,7 +5,8 @@
 # git pull origin main
 #
 # When done and want to save:
+# git add .
 # git commit -m "Done editing"
 #
-# git status:
+# git status
 #token: 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
