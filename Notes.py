@@ -32,20 +32,41 @@
 
 
 
-x= int(input("X= "))
-while x<10:                                          #use while when vague number of iterations
-    print(x)
-    x+=1
-# for i in range(10):                                      #use for when more structured
-for i in "cake":
-    print(i)                                    #iterates each letter of cake
+# x= int(input("X= "))
+# while x<10:                                 #use while when vague number of iterations
+#     print(x)
+#     x+=1
+# # for i in range(10):                        #use for when more structured
+# for i in "cake":
+#     print(i)                                #iterates each letter of cake
+#
+#
 
 
+def greeting(name):                         #function (parameter):
+    print("Hello")                          #define function
+    print("Good Morning")
+    print(name)
+greeting("Mariska")                         #uses a function
+
+def echo(message):
+    print(message)
+    print(message)
+    return len(message)
+print(echo("cake"))         #or store in variable and print
+
+def abs(n):
+    if (n<0):
+        return(-n)
+    else:
+        return(n)
+    x= abs(x)
 
 
-
-
-
+def inc():
+    a=a+1                       #scope
+a=5                                  #global
+inc()                                #scope
 
 
 
