@@ -43,40 +43,79 @@
 #
 
 
-def greeting(name):                         #function (parameter):
-    print("Hello")                          #define function
-    print("Good Morning")
-    print(name)
-greeting("Mariska")                         #uses a function
-
-def echo(message):
-    print(message)
-    print(message)
-    return len(message)
-print(echo("cake"))         #or store in variable and print
-
-def abs(n):
-    if (n<0):
-        return(-n)
-    else:
-        return(n)
-    x= abs(x)
-
-
-def inc():
-    a=a+1                       #scope
-a=5                                  #global
-inc()                                #scope
-
-
+# def greeting(name):                         #function (parameter):
+#     print("Hello")                          #define function
+#     print("Good Morning")
+#     print(name)
+# greeting("Mariska")                         #uses a function
+#
+# def echo(message):
+#     print(message)
+#     print(message)
+#     return len(message)
+# print(echo("cake"))         #or store in variable and print
+#
+# def abs(n):
+#     if (n<0):
+#         return(-n)
+#     else:
+#         return(n)
+#     x= abs(x)
+#
+#
+# def inc():
+#     a=a+1                       #scope
+# a=5                                  #global
+# inc()                                #scope
 
 
+# def echo(message: str) -> int:            #type hints: msg is a string and going to return int
+#     #---if type(message) !=type(""):       #instead...
+#     if not isinstance(message,str):
+#         print (f"Wrong Type!: {type(message)}")
+#         return -1
+#     print(message)
+#     print(message)
+#     return len(message)
+#
+# a= echo("hi")
+# d= echo([1,5,6])        #[list]
+# print(d)
+# print(type(d))
 
+#___TASK___
+# Create a function that generates a UT EID (returned as a string) from initials
+# (should be type hints) and a given number.
+# Refer to Python doc. to see how to concatenate strings
 
+# def create_uteid (initials: str, num: int) -> str:
+#     return initials + str(num)
+#
+# print (create_uteid("ML", 345))
+#
+# assert create_uteid("ML",345) == "ML345", "ERROR!"
 
+# def foo(a,b):
+#     return a+b, a-b
+# foo(3,4)                                #tuples
+# sum,diff= foo(3,4)
+# print(sum,diff)
+#
+# range (10)
+# print(list(range(10)))                      #range
+# for i in range (10):
+#     print(i)
 
-
-
+def value_counts(nums):
+    counts={}
+    if nums is not None:
+        for num in nums:
+            #Ternary Equivalent: counts[num]=1 if num not in counts else counts[num] + 1
+            if num not in counts:             #checks if num is already a key (already in list)
+                counts[num]=1
+            else:
+                counts[num] += 1
+    return counts
 
 
 
