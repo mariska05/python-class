@@ -106,20 +106,34 @@
 # for i in range (10):
 #     print(i)
 
-def value_counts(nums):
-    counts={}
-    if nums is not None:
-        for num in nums:
-            #Ternary Equivalent: counts[num]=1 if num not in counts else counts[num] + 1
-            if num not in counts:             #checks if num is already a key (already in list)
-                counts[num]=1
-            else:
-                counts[num] += 1
-    return counts
+# def value_counts(nums):
+#     counts={}
+#     if nums is not None:
+#         for num in nums:
+#             #Ternary Equivalent: counts[num]=1 if num not in counts else counts[num] + 1
+#             if num not in counts:             #checks if num is already a key (already in list)
+#                 counts[num]=1
+#             else:
+#                 counts[num] += 1
+#     return counts
 
+# define a class
+class Dog:
+    sound = "bark"  # class attribute
 
+# Create an object from the class
+dog1 = Dog()
 
+# Access the class attribute
+print(dog1.sound)
 
+#class
+def Vampire (Monster):                  #class:vampire
+    age= 10                             #inherit from Monster class (has access, reuse code)
+    def get_age(x)
+
+def TeenVampire(Vampire):
+    def smile()
 
 
 
