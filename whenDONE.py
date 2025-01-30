@@ -1,5 +1,5 @@
 # when pushing out changes:
-# git push origin main
+#git push origin main
 #
 # When pulling in changes:
 # git pull origin main

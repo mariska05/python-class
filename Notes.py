@@ -117,28 +117,51 @@
 #                 counts[num] += 1
 #     return counts
 
-# define a class
-class Dog:
-    sound = "bark"  # class attribute
+# # define a class
+# class Dog:
+#     sound = "bark"  # class attribute
+#
+# # Create an object from the class
+# dog1 = Dog()
+#
+# # Access the class attribute
+# print(dog1.sound)
+#
+# #class
+# def Vampire (Monster):                  #class:vampire
+#     age= 10                             #inherit from Monster class (has access, reuse code)
+#     def get_age(x):
+#
+# def TeenVampire(Vampire):
+#     def smile():
 
-# Create an object from the class
-dog1 = Dog()
+class Monster:
+    def __init__(
+            self,name, given_age
+    ):                                  #Constructor gets called when we "instantiate" an object
+        self.name= name
+        self.age= given_age
+    def speak(self):
+        return "Generic Monster Voice"
+    def __str__(self):                       #to_string
+        return f"{self.name}, {self.age}"
 
-# Access the class attribute
-print(dog1.sound)
+class Vampire(Monster):                          #Inheritance
+    def __init__(self, name, age, amt_blood):
+        super().__init__(name,age)              #calls superconstructor
+        self.amt_blood= amt_blood
+    def speak(self):                               #Method overriding - will look for function definition in child
+        return "I drink blood."
 
-#class
-def Vampire (Monster):                  #class:vampire
-    age= 10                             #inherit from Monster class (has access, reuse code)
-    def get_age(x)
+x= Monster("b", 10)             #parameters of the constructor
+y= Monster("a", 15)
 
-def TeenVampire(Vampire):
-    def smile()
+def func(x):
+    return x + 1
 
 
-
-
-
+def test_answer():
+    assert func(3) == 5
 
 
 
