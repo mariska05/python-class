@@ -163,10 +163,23 @@ def func(x):
 def test_answer():
     assert func(3) == 5
 
+#Partition (split step):
+def partition(arr, low, high):
+    pivot = arr[high]            # Pick last element as pivot
+    i = low - 1                  # Index for elements < pivot
+    for j in range(low, high):
+        if arr[j] <= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]         # Swap
+    arr[i+1], arr[high] = arr[high], arr[i+1]        # Place pivot in middle
+    return i + 1                 # Return pivot's final position
 
-
-
-
+#Quick Sort (uses partition):
+def quick_sort(arr, low, high):
+    if low < high:
+        pivot_idx = partition(arr, low, high)  # Partition step
+        quick_sort(arr, low, pivot_idx-1)      # Sort left
+        quick_sort(arr, pivot_idx+1, high)     # Sort right
 
 
 
